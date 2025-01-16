@@ -29,15 +29,7 @@ public class TemperatureConverter {
                     convertedTemp = (fahrenheit - 32) * 5 / 9;
                     System.out.printf("Temperature in Celsius: %.2f°C\n\n", convertedTemp);
                 }
-                case 3 -> {
-                    String confirmation = getStringInput("\"Are you sure you want to exit? (yes/no)\"");
-                    if (confirmation.equalsIgnoreCase("yes")) {
-                        System.out.println("GoodBye!");
-                        flag = false;
-                    } else {
-                        System.out.println("Please,Choose the menu!");
-                    }
-                }
+                case 3 -> flag = false;
                 default -> System.out.println("Invalid input!");
             }
         }
