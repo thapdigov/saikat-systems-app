@@ -1,14 +1,8 @@
 package saikat.system.app.temperaturconverter;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-import static saikat.system.app.util.InputUtil.getDoubleInput;
-import static saikat.system.app.util.InputUtil.getIntegerInput;
+import static saikat.system.app.util.InputUtil.*;
 
 public class TemperatureConverter {
-    private static final Scanner scanner = new Scanner(System.in);
-
     public void converter() {
         System.out.println("""
                     
@@ -36,8 +30,7 @@ public class TemperatureConverter {
                     System.out.printf("Temperature in Celsius: %.2f°C\n\n", convertedTemp);
                 }
                 case 3 -> {
-                    System.out.println("Are you sure you want to exit? (yes/no)");
-                    String confirmation = scanner.next();
+                    String confirmation = getStringInput("\"Are you sure you want to exit? (yes/no)\"");
                     if (confirmation.equalsIgnoreCase("yes")) {
                         System.out.println("GoodBye!");
                         flag = false;
@@ -48,6 +41,5 @@ public class TemperatureConverter {
                 default -> System.out.println("Invalid input!");
             }
         }
-        scanner.close();
     }
 }

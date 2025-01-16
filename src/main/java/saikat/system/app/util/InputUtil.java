@@ -32,6 +32,6 @@ public class InputUtil {
 
     public static String getStringInput(String title) {
         System.out.print(title + ": ");
-        return scanner.next();
+        return scanner.nextLine();
     }
 }
