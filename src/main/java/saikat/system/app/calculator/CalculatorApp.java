@@ -1,15 +1,10 @@
 package saikat.system.app.calculator;
 
-import saikat.system.app.util.InputUtil;
-
-import java.util.Scanner;
 import java.util.Set;
 
 import static saikat.system.app.util.InputUtil.*;
 
 public class CalculatorApp {
-    private static final Scanner scanner = new Scanner(System.in);
-
     public void useCalculator() {
         boolean flag = true;
         while (flag) {
@@ -52,7 +47,7 @@ public class CalculatorApp {
         }
     }
 
-    public static Double addition(Double a, Double b) {
+    public Double addition(Double a, Double b) {
         return a + b;
     }
 
@@ -77,6 +72,4 @@ public class CalculatorApp {
             }
         }
     }
-
-
 }
