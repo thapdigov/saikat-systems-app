@@ -47,19 +47,19 @@ public class CalculatorApp {
         }
     }
 
-    public Double addition(Double a, Double b) {
+    public  Double addition(Double a, Double b) {
         return a + b;
     }
 
-    public static Double subtraction(Double a, Double b) {
+    public  Double subtraction(Double a, Double b) {
         return a - b;
     }
 
-    public static Double multiplication(Double a, Double b) {
+    public  Double multiplication(Double a, Double b) {
         return a * b;
     }
 
-    public static Double divison(Double a, Double b) {
+    public  Double divison(Double a, Double b) {
         while (true) {
             try {
                 if (b == 0) {
