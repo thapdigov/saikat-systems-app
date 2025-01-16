@@ -1,6 +1,7 @@
 package saikat.system.app;
 
 import saikat.system.app.calculator.CalculatorApp;
+import saikat.system.app.numberguessinggame.NumberGuessingGame;
 import saikat.system.app.temperaturconverter.TemperatureConverter;
 import saikat.system.app.todolist.dao.TodoServiceImpl;
 
@@ -16,5 +17,8 @@ public class Main {
         //Task3
         TodoServiceImpl todoService = new TodoServiceImpl();
         todoService.start();
+        //Task4
+        NumberGuessingGame numberGuessingGame = new NumberGuessingGame();
+        numberGuessingGame.gameStart();
     }
 }
