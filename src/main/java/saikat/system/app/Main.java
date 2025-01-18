@@ -3,6 +3,7 @@ package saikat.system.app;
 import saikat.system.app.calculator.CalculatorApp;
 import saikat.system.app.numberguessinggame.NumberGuessingGame;
 import saikat.system.app.temperaturconverter.TemperatureConverter;
+import saikat.system.app.textfileanalyzer.TextFileAnalyzer;
 import saikat.system.app.todolist.dao.TodoServiceImpl;
 
 public class Main {
@@ -20,5 +21,8 @@ public class Main {
         //Task4
         NumberGuessingGame numberGuessingGame = new NumberGuessingGame();
         numberGuessingGame.gameStart();
+        //Task5
+        TextFileAnalyzer textFileAnalyzer = new TextFileAnalyzer();
+        textFileAnalyzer.textFileAnalyzer();
     }
 }
