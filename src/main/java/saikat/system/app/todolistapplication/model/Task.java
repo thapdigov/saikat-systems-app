@@ -1,4 +1,4 @@
-package saikat.system.app.todolist.model;
+package saikat.system.app.todolistapplication.model;
 
 public class Task {
     private String title;

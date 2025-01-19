@@ -1,10 +1,11 @@
 package saikat.system.app;
 
-import saikat.system.app.calculator.CalculatorApp;
+import saikat.system.app.basicbankingsystem.BankAccount;
+import saikat.system.app.calculatorapplication.CalculatorApp;
 import saikat.system.app.numberguessinggame.NumberGuessingGame;
 import saikat.system.app.temperaturconverter.TemperatureConverter;
 import saikat.system.app.textfileanalyzer.TextFileAnalyzer;
-import saikat.system.app.todolist.dao.TodoServiceImpl;
+import saikat.system.app.todolistapplication.dao.TodoServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,5 +25,8 @@ public class Main {
         //Task5
         TextFileAnalyzer textFileAnalyzer = new TextFileAnalyzer();
         textFileAnalyzer.textFileAnalyzer();
+        //Task6
+        BankAccount bankAccount = new BankAccount();
+        bankAccount.start();
     }
 }
