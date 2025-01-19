@@ -10,7 +10,9 @@ public class InputUtil {
         while (true) {
             System.out.print(title + ": ");
             try {
-                return scanner.nextInt();
+                int value = scanner.nextInt();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException ex) {
                 System.out.println("Invalid input! Please enter a valid integer!");
                 scanner.nextLine();
@@ -22,7 +24,9 @@ public class InputUtil {
         while (true) {
             System.out.print(title + ": ");
             try {
-                return scanner.nextDouble();
+                Double value = scanner.nextDouble();
+                scanner.nextLine();
+                return value;
             } catch (InputMismatchException ex) {
                 System.out.println("Invalid input! Please enter a valid double");
                 scanner.nextLine();

@@ -1,6 +1,6 @@
-package saikat.system.app.todolist.dao;
+package saikat.system.app.todolistapplication.dao;
 
-import saikat.system.app.todolist.model.Task;
+import saikat.system.app.todolistapplication.model.Task;
 
 import java.util.ArrayList;
 import java.util.List;

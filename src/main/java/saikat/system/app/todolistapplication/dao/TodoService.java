@@ -1,4 +1,4 @@
-package saikat.system.app.todolist.dao;
+package saikat.system.app.todolistapplication.dao;
 
 public interface TodoService {
 

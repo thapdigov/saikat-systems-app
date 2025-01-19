@@ -5,7 +5,6 @@ import java.io.*;
 public class TextFileAnalyzer {
 
     public void textFileAnalyzer() {
-
         String filePath = "textAnalyzer.dat";
 
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {

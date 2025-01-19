@@ -1,8 +1,3 @@
-import org.junit.Test;
-import saikat.system.app.calculator.CalculatorApp;
-
-import java.util.Optional;
-
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
